@@ -93,7 +93,7 @@ footer {
 }
 
 .toggle-nav {
-    font-size: 3em;
+    /*font-size: 3em;*/
     position: relative;
     fixed: top;
     text-align: left;
@@ -168,6 +168,23 @@ body,
         margin-right: -20px;
     }
     h1 {
-        font-size: 250%;
+        font-size: 3em;
     }
 }
+
+.btn {
+    background: transparent;
+    /*color: #F2F2F2;*/
+
+    /* CSS Transition */
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+
+}
+}
+
+
+

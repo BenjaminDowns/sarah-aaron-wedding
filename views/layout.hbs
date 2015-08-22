@@ -22,7 +22,7 @@
 			<header>
 <nav>
 <div class="header">
-  <div class="menu hidden-xs">
+  <div class="navbar hidden-phone hidden-tablet hidden-xs">
     <a href="/" class="link">
       <div class="title">home</div>
       <div class="bar"></div>
@@ -44,7 +44,22 @@
       <div class="leftbar"></div>
     </a>
   </div>
-  <a class="toggle-nav visible-xs" href="#">&#9776;</a>
+  
+  <div class="dropdown toggle-nav visible-xs">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <i class='fa fa-bars'></i>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="/">Home</a></li>
+    <li><a href="RSVP">RSVP</a></li>
+    <li><a href="#">Details</a></li>
+    <li><a href="#">Our Story</a></li>
+  </ul>
+</div>
+
+
+
+  {{!-- <a class="toggle-nav visible-xs" href="#">Menu</a> --}}
 </div>
 </nav>
 </header>
@@ -67,6 +82,8 @@
     <script src="/js/jquery.easing.min.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js'></script>
+
+    <script src="/js/main.js"></script>
 
     <script>
       $("#rsvpForm").validate();
