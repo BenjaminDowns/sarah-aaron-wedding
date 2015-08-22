@@ -1,0 +1,173 @@
+/* main color: #00539F */
+
+
+/* secondary color: #DF764E */
+
+html,
+body {
+    font-family: 'Amatic SC', cursive;
+    color: #2B378C;
+    background: url('/img/symphony.png');
+}
+
+h1 {
+    font-size: 500%;
+}
+
+form {
+    font-size: 300%;
+}
+
+#formStory {
+    /*height: 200px;
+    width: 85%;*/
+    border-radius: 4%;
+}
+
+.btn {
+    font-size: 200%;
+}
+
+#background {
+    background: url('/img/symphony.png');
+}
+
+.header {
+    width: 100%;
+    border-bottom: 3px solid #2B378C;
+    text-align: center;
+    position: relative;
+}
+
+.link {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 25px;
+    position: relative;
+    text-decoration: none !important;
+    color: #2B378C;
+    font-weight: 1200;
+    font-size: 3em;
+}
+
+.link .bar {
+    width: 1%;
+    display: inline-block;
+    border-bottom: 5px solid #DF764E;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.link:hover .bar {
+    opacity: 1;
+    width: 65%;
+}
+
+.link .leftbar {
+    width: 1%;
+    display: inline-block;
+    border-bottom: 5px solid #DF764E;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.link:hover .leftbar {
+    opacity: .6;
+    width: 100%;
+}
+
+footer {
+    font-family: 'Palatino';
+    font-size: 1em;
+    position: bottom;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+}
+
+.toggle-nav {
+    font-size: 3em;
+    position: relative;
+    fixed: top;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* FADEY ONE BEGIN */
+/*.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background: url("/img/carousel-3.jpg");
+}
+.item:nth-child(2) {
+  background: url("/img/stomach-waterfall1.jpg");
+}
+.item:nth-child(3) {
+  background: url("/img/stomach-waterfall2.jpg");
+}*/
+/* FADEY ONE END */
+
+/*slidey one*/
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 50%;
+}
+/*slidey one*/
+
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    h1 {
+        font-size: 250%;
+    }
+}

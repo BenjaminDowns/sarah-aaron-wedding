@@ -1,0 +1,42 @@
+<body>
+<div class='container'>
+	<div class='col-md-offset-1'>
+		<h1>{{title}}</h1>
+	</div>
+</div>
+
+<div class='container'>
+	<div class='text-center'>
+		<form action="/rsvp" method="post" id="rsvpForm">
+		<div class='row'>
+			<div class='col-md-3 col-md-offset-1'>
+				<label>First Name(s)</label>
+					<input class='form-control' type='text' name='name' required></input>
+			</div>
+			<div class='col-md-3'> 
+				<label>Last Name</label>
+					<input class='form-control' type='text' name='lastName' required></input>
+			</div>
+			<div class='col-md-3'>
+				<label>RSVP</label>
+					<select class="form-control" name='attendance' required>
+					  <option></option>
+					  <option>Yes, I plan to attend.</option>
+					  <option>Regrets</option>
+					</select>
+			</div>
+		</div>
+	
+		<div class='text-center'>
+			<label>What is a favorite memory you have Sarah and/or Aaron?</label><br>
+				<textarea class="form-control" id='formStory' name='story' rows="3" required></textarea>
+{{!-- 
+				<input class='form-control' type='textarea'  rows="12" cols='2' wrap='hard' required></input> --}}
+		</div>
+		<input type='submit'></input>
+		</form>
+	</div>
+</div>
+
+
+</body>
