@@ -1,22 +1,42 @@
-/* main color: #00539F */
+/* main color: #264E78 */
 
 
-/* secondary color: #DF764E */
+/* secondary color: #DC5525 */
 
 html,
 body {
-    font-family: 'Amatic SC', cursive;
-    color: #2B378C;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+    color: #264E78;
     background: url('/img/symphony.png');
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 1.5em;
 }
 
 h1 {
-    font-size: 500%;
+    font-size: 3em;
+    font-family: "Amatic SC";
 }
 
 form {
-    font-size: 300%;
+    font-size: 2em;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .1s ease-in-out;
+}
+
+.section a:hover {
+    color: #DC5525;
+    text-decoration: none;
+}
+
 
 #formStory {
     /*height: 200px;
@@ -34,9 +54,11 @@ form {
 
 .header {
     width: 100%;
-    border-bottom: 3px solid #2B378C;
+    border-bottom: 3px solid #264E78;
     text-align: center;
     position: relative;
+    font-family: "Amatic SC";
+    font-size: 1.3em;
 }
 
 .link {
@@ -45,7 +67,7 @@ form {
     margin: 15px 25px;
     position: relative;
     text-decoration: none !important;
-    color: #2B378C;
+    color: #264E78;
     font-weight: 1200;
     font-size: 3em;
 }
@@ -53,7 +75,7 @@ form {
 .link .bar {
     width: 1%;
     display: inline-block;
-    border-bottom: 5px solid #DF764E;
+    border-bottom: 5px solid #DC5525;
     position: absolute;
     bottom: 0;
     left: 0%;
@@ -69,7 +91,7 @@ form {
 .link .leftbar {
     width: 1%;
     display: inline-block;
-    border-bottom: 5px solid #DF764E;
+    border-bottom: 5px solid #DC5525;
     position: absolute;
     bottom: 0;
     right: 0%;
@@ -99,6 +121,34 @@ footer {
     text-align: left;
     margin-left: 10px;
 }
+
+.visual-space {
+    background: #264E78;
+    color: #F0F0F0;
+    transition: all .5s ease-in-out;
+}
+
+.section {
+    padding: 50px 10px 50px 10px;
+    margin: 10px 10px 10px 10px;
+    /*min-height: 400px;*/
+}
+
+#RSVPbtn {
+
+}
+
+.heading {
+    /*text-decoration: underline;*/
+    border-top: #264E78 dotted 2px;
+    border-bottom: #264E78 dotted 2px;
+    font-family: "Amatic SC";
+    font-weight: 700;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-size: 4em;
+}
+
 
 /* FADEY ONE BEGIN */
 /*.carousel-fade .carousel-inner .item {
@@ -172,8 +222,12 @@ body,
     }
 }
 
+
+
+
+
 .btn {
-    background: transparent;
+    /*background: transparent;*/
     /*color: #F2F2F2;*/
 
     /* CSS Transition */
@@ -182,9 +236,79 @@ body,
     -ms-transition: background .2s ease-in-out, border .2s ease-in-out;
     -o-transition: background .2s ease-in-out, border .2s ease-in-out;
     transition: background .2s ease-in-out, border .2s ease-in-out;
-
-}
 }
 
+.btn.active, .btn:active {
+    background-color: #DC5525 !important;
+    opacity: .7 !important;
+
+}
+
+.btn.hover, .btn:hover {
+    background-color: #DC5525 !important;
+    opacity: .9 !important;
+    color: white;
+}
 
 
+.btn.focus, .btn:focus {
+    background-color: #DC5525 !important;
+    opacity: .7 !important;
+}
+
+.dropdown-menu {
+    font-size: 3em;
+}
+
+.drop-shadow {
+    box-shadow: 0px 10px 5px #888888;
+}
+
+.form-control {
+    font-size: .8em;
+    font-family: Times;
+}
+
+.form-control:focus {
+    border-color: #DC5525;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(223, 118, 78, 1);
+}
+
+#lodgePic {
+    height: auto;
+    max-height: 100%
+    width: 100%;
+    max-width: none;
+    display: block;
+    margin: auto;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 37%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+li {
+    list-style: none;
+}
+
+li::before {    
+    font-family: 'FontAwesome';
+    content: "\f061";
+    margin:0px 0px 0 0px;
+    color: #DC5525;
+}
+
+ul {
+    border-bottom: gray dotted 2px
+}

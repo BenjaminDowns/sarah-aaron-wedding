@@ -32,7 +32,7 @@ router.get('/', function(req, res, next) {
 // GET details/registry page
 router.get('/details', function(req, res, next) {
   res.render('details', {
-    title: 'Events and Accommodations'
+    title: 'Event Details and Accommodations'
   });
 });
 
@@ -43,15 +43,27 @@ router.get('/RSVP', function(req, res, next) {
   });
 });
 
+// GET ourstory page
+router.get('/ourstory', function(req, res, next) {
+  res.render('ourstory', {
+    title: 'Our Story'
+  });
+});
+
 // RSVP response
 router.post('/RSVP', function(req, res, next) {
   var firstName = req.body.name;
   var lastName = req.body.lastName;
-  var story = req.body.story;
   var attendance = req.body.attendance;
+  var quantity = req.body.quantity;
+  var howYouKnow = req.body.howYouKnow;
+  var howLong = req.body.howLong;
+  // var prediction = req.body.prediction;
   res.send("Thanks for RSVP'ing, " + req.body.name);
-  // style this, and enable timeout function that redirects to registry/details
-  sendmail(firstName + ' ' + lastName + " has just RSVP'd. \n\nTheir attendance status is " + attendance + "\n\nTheir submitted story is : \n\n\n" + req.body.story);
+  res.render('index')
+  console.log(req.body);
+  // // style this, and enable timeout function that redirects to registry/details
+  sendmail(firstName + " " + lastName + " has just RSVP'd. \n\nTheir attendance status is " + attendance + " and they will have " + quantity + " more with them. \n\nThey've known Sarah and/or Aaron because " + howYouKnow + " since " + howLong);
 });
 
 
