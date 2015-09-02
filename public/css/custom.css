@@ -1,11 +1,11 @@
 /* main color: #264E78 */
 
 
-/* secondary color: #DC5525 */
+/* secondary color: #FF7544 */
 
 html,
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #264E78;
     background: url('/img/symphony.png');
@@ -18,13 +18,22 @@ p {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family: "Amatic SC";
 }
 
-form {
-    font-size: 2em;
+h2, h3, p {
+    font-weight: 300;
 }
+
+
+.wrap {
+
+}
+
+/*form {
+    font-size: 2em;
+}*/
 
 a {
     text-decoration: none;
@@ -33,7 +42,7 @@ a {
 }
 
 .section a:hover {
-    color: #DC5525;
+    color: #FF7544;
     text-decoration: none;
 }
 
@@ -41,11 +50,10 @@ a {
 #formStory {
     /*height: 200px;
     width: 85%;*/
-    border-radius: 4%;
 }
 
 .btn {
-    font-size: 200%;
+    font-size: 1em;
 }
 
 #background {
@@ -75,7 +83,7 @@ a {
 .link .bar {
     width: 1%;
     display: inline-block;
-    border-bottom: 5px solid #DC5525;
+    border-bottom: 5px solid #FF7544;
     position: absolute;
     bottom: 0;
     left: 0%;
@@ -91,7 +99,7 @@ a {
 .link .leftbar {
     width: 1%;
     display: inline-block;
-    border-bottom: 5px solid #DC5525;
+    border-bottom: 5px solid #FF7544;
     position: absolute;
     bottom: 0;
     right: 0%;
@@ -105,14 +113,17 @@ a {
 }
 
 footer {
-    font-family: 'Palatino';
-    font-size: 1em;
-    position: bottom;
-    left: 0px;
     bottom: 0px;
-    height: 30px;
-    width: 100%;
+    height: 3em;
+    background: #264E78;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: .75em;
+    padding-right: 10%;
+    padding-top: .25em;
 }
+
 
 .toggle-nav {
     /*font-size: 3em;*/
@@ -239,20 +250,20 @@ body,
 }
 
 .btn.active, .btn:active {
-    background-color: #DC5525 !important;
+    background-color: #FF7544 !important;
     opacity: .7 !important;
 
 }
 
 .btn.hover, .btn:hover {
-    background-color: #DC5525 !important;
+    background-color: #FF7544 !important;
     opacity: .9 !important;
     color: white;
 }
 
 
 .btn.focus, .btn:focus {
-    background-color: #DC5525 !important;
+    background-color: #FF7544 !important;
     opacity: .7 !important;
 }
 
@@ -264,15 +275,56 @@ body,
     box-shadow: 0px 10px 5px #888888;
 }
 
-.form-control {
+/*.form-control {
     font-size: .8em;
     font-family: Times;
 }
 
 .form-control:focus {
-    border-color: #DC5525;
+    border-color: #FF7544;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(223, 118, 78, 1);
+}*/
+
+/*RSVP page*/
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #FF7544 dotted 2px;
+    width: 60%;
+    min-height: 350px;
+    /*centers the div*/
+    float: none;
+    margin: 0 auto;
+    background-color: rgba(38, 78, 120, .4);
+    margin-bottom: 10%;
 }
+
+#question1 {
+    display: block;
+}
+
+#question2 {
+    display: none;
+}
+
+#question3 {
+    display: none;
+}
+
+#question4 {
+    display: none;
+}
+
+#question5 {
+    display: none;
+}
+
+#question6 {
+    display: none;
+}
+
 
 #lodgePic {
     height: auto;
@@ -302,13 +354,22 @@ li {
     list-style: none;
 }
 
-li::before {    
+#hotels::before {    
     font-family: 'FontAwesome';
     content: "\f061";
     margin:0px 0px 0 0px;
-    color: #DC5525;
+    color: #FF7544;
 }
 
 ul {
     border-bottom: gray dotted 2px
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    .parent {
+        width: 100%;
+        height: 100%;
+    }
 }

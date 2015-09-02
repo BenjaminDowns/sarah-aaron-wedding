@@ -1,71 +1,66 @@
 <body>
 <div class='container'>
-	<div class='text-center'>
-		<h1>{{title}}</h1>
-	</div>
+<h1></h1>
 </div>
-<div class='container'>
-	<div class='text-center'>
-		<form action="/rsvp" method="post" id="rsvpForm">
-		<div class='row'>
-			<div class='col-md-4 col-md-offset-1 well drop-shadow'>
-				<label>First Name(s)</label>
-					<input class='form-control' type='text' name='name' required></input>
-			</div>
-			<div class='col-md-2'>
-			</div>
-			<div class='col-md-4 well drop-shadow'> 
-				<label>Last Name</label>
-					<input class='form-control' type='text' name='lastName' required></input>
-			</div>
-			<div class='col-md-1'>
-			</div>
-		</div>
-		<div class='row'>
-			<div class='col-md-4 col-md-offset-1 text-center well drop-shadow'>
-				<label>RSVP</label>
-					<select class="form-control" name='attendance' required>
-					  <option></option>
-					  <option>Yes, I plan to attend.</option>
-					  <option>Regrets</option>
-					</select>
-			</div>
-			<div class='col-md-2'>
-			</div>
-			<div class='col-md-4 well drop-shadow'>
-				<label>How many people with you?</label>
-					<select class="form-control" name='quantity' required>
-					  <option></option>
-					  <option>Just me!</option>
-					  <option>+1</option>
-					  <option>2</option>
-					  <option>3</option>
-					  <option>4</option>
-					  <option>5</option>
-					  <option>6</option>
-					  <option>7</option>
-					  <option>Seriously? More than 7?</option>
-					</select>
-			</div>
-			<div class='col-md-2'>
-			</div>
-		</div>
-		<div class='row'>
-			<div class='col-md-5 text-center well drop-shadow'>
-			<label>How do you know Sarah and/or Aaron?</label><br>
-				<textarea class="form-control" id='formStory' name='howYouKnow' rows="3" required></textarea>
-			</div>
-			<div class='col-md-2'>
-			</div>
-			<div class='col-md-5 text-center well drop-shadow'>
-			<label>How long have you known them?</label><br>
-				<textarea class="form-control" id='formStory' name='howLong' rows="3" required></textarea>
-			</div>
-		</div>
-		<input style='margin: 20px' type='submit'></input>
-		</form>
+{{!-- <div class='container text-center'> --}}
+<div class='parent text-center'>
+	<form action="/rsvp" method="post">
+	<div id='question1' class="animated fadeInUp">
+		<h2>What is your name?</h2>
+		<input class='form-control' type='text' name='name' placeholder='first' style='margin-bottom: .5em'></input>
+		<input class='form-control' type='text' name='lastName' placeholder='last'></input>
+		<button type='button' class='btn btn-primary' style='margin-top: 1em' id='question1btn'><p>Next question</p></button>
 	</div>
+	<div id='question2' class="animated fadeInUp">
+		<h2>Will you join us?</h2>
+		<select class="form-control" name='attendance'>
+			<option></option>
+			<option>Yes, I plan to attend.</option>
+			<option>Regrets</option>
+		</select>
+		<button type='button' class='btn btn-primary' style='margin-top: 1em' id='question2btn'><p>Next question</p></button>
+	</div>
+	<div id='question3' class="animated fadeInUp">
+		<h2>How many attending?</h2>
+			<select class="form-control" name='quantity'>
+			  <option></option>
+			  <option>0</option>
+			  <option>Just me!</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>6</option>
+			  <option>7</option>
+			  <option>Seriously? More than 7?</option>
+			</select>
+			<button type='button' class='btn btn-primary' style='margin-top: 1em' id='question3btn'><p>Next question</p></button>
+	</div>
+	<div id='question4' class="animated fadeInUp">
+		<h2>How do you know Sarah and/or Aaron?</h2>
+		<h4>(feel free to write as much as you like here!)</h4>
+			<textarea class="form-control" id='formStory' name='howYouKnow' rows="3"></textarea>
+			<button type='button' class='btn btn-primary' style='margin-top: 1em' id='question4btn'><p>Next question</p></button>
+	</div>
+
+	<div id='question5' class="animated fadeInUp">
+		<h2>How long have you known Sarah and/or Aaron?</h2>
+			<textarea class="form-control" id='formStory' name='howLong' rows="3"></textarea>
+			<button type='button' class='btn btn-primary' style='margin-top: 1em' id='question5btn'><p>Next question</p></button>
+	</div>
+
+	<div id='question6' class="animated fadeInUp">
+		<h2>What do you think Sarah and Aaron will be up to ten years from now?</h2>
+			<textarea class="form-control" id='formStory' name='prediction' rows="3"></textarea>
+			<button type='submit' class='btn btn-primary' style='margin-top: 1em' id='question6btn'><p>Submit all answers</p></button>
+	</div>
+<br><br><br><br><p>* all fields required</p>
+</form>
+
 </div>
+
+{{!-- </div> --}}
+
 
 
 </body>

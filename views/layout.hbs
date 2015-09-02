@@ -12,64 +12,69 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 {{!--   <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300' rel='stylesheet' type='text/css'> --}}
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 	
 		<!--script type="text/javascript" src="js/jquery.nav.js"></script-->
 </head>
-		<body>
-			<header>
-<nav>
-<div class="header">
-  <div class="navbar hidden-phone hidden-tablet hidden-xs">
-    <a href="/" class="link">
-      <div class="title">home</div>
-      <div class="bar"></div>
-      <div class="leftbar"></div>
-    </a>
-    <a href="/rsvp" class="link">
-      <div class="title">rsvp</div>
-      <div class="bar"></div>
-      <div class="leftbar"></div>
-    </a>
-    <a href="/details" class="link">
-      <div class="title">details</div>
-      <div class="bar"></div>
-      <div class="leftbar"></div>
-    </a>
-    <a href="/ourstory" class="link">
-      <div class="title">our story</div>
-      <div class="bar"></div>
-      <div class="leftbar"></div>
-    </a>
-  </div>
-  
-  <div class="dropdown toggle-nav visible-xs">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <i class='fa fa-bars'></i>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="/">Home</a></li>
-    <li><a href="RSVP">RSVP</a></li>
-    <li><a href="/details">Details</a></li>
-    <li><a href="/ourstory">Our Story</a></li>
-  </ul>
-</div>
+  <body>
+  <div class='wrap'>
+    <header>
+      <nav>
+        <div class="header">
+          <div class="navbar hidden-phone hidden-tablet hidden-xs">
+            <a href="/" class="link">
+              <div class="title">home</div>
+              <div class="bar"></div>
+              <div class="leftbar"></div>
+            </a>
+            <a href="/rsvp" class="link">
+              <div class="title">rsvp</div>
+              <div class="bar"></div>
+              <div class="leftbar"></div>
+            </a>
+            <a href="/details" class="link">
+              <div class="title">details</div>
+              <div class="bar"></div>
+              <div class="leftbar"></div>
+            </a>
+            <a href="/ourstory" class="link">
+              <div class="title">our story</div>
+              <div class="bar"></div>
+              <div class="leftbar"></div>
+            </a>
+          </div> 
+          {{!-- end of navbar hidden-phone --}}
+        
+          <div class="dropdown toggle-nav visible-xs">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <i class='fa fa-bars'></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="/">Home</a></li>
+              <li><a href="RSVP">RSVP</a></li>
+              <li><a href="/details">Details</a></li>
+              <li><a href="/ourstory">Our Story</a></li>
+            </ul>
+          </div>
+          {{!-- end of dropdown toggle-nav --}}
 
 
+        {{!-- <a class="toggle-nav visible-xs" href="#">Menu</a> --}}
+        </div>  {{!-- div class header --}}
 
-  {{!-- <a class="toggle-nav visible-xs" href="#">Menu</a> --}}
-</div>
-</nav>
-</header>
+      </nav>
+    </header>
  
 {{{body}}}
 
+</div>
 <footer>
-<div class="container" style='margin-left: 70%'>
+<div class="visual-space">
     <p>Copyright &copy; Benjamin Downs 2015</p>
 </div>
 </footer>

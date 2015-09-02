@@ -58,12 +58,13 @@ router.post('/RSVP', function(req, res, next) {
   var quantity = req.body.quantity;
   var howYouKnow = req.body.howYouKnow;
   var howLong = req.body.howLong;
-  // var prediction = req.body.prediction;
+  var prediction = req.body.prediction;
+
   res.send("Thanks for RSVP'ing, " + req.body.name);
   res.render('index')
   console.log(req.body);
   // // style this, and enable timeout function that redirects to registry/details
-  sendmail(firstName + " " + lastName + " has just RSVP'd. \n\nTheir attendance status is " + attendance + " and they will have " + quantity + " more with them. \n\nThey've known Sarah and/or Aaron because " + howYouKnow + " since " + howLong);
+  sendmail(firstName + " " + lastName + " has just RSVP'd. \n\nTheir attendance status is " + attendance + " and they will have " + quantity + " more with them. \n\nThey've known Sarah and/or Aaron because: \n\n" + howYouKnow + "\n\nThey've know them since: \n\n" + howLong + "\n\nTheir prediction is: \n\n" + prediction);
 });
 
 
