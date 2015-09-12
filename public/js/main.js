@@ -1,3 +1,5 @@
+$('input').on('keydown', function(event) { if (event.which == 13 || event.which == 10) { event.preventDefault(); } });
+
 $('document').ready(function() {
 
   $('#dropdownMenu1').click(function() {
