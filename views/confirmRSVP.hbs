@@ -1,0 +1,108 @@
+
+<div class='col-sm-12 confirm-rsvp visual-space' class='animated FadeIn'>
+
+
+<form action="/confirmRSVP" method="post" class='animated FadeIn'>
+<div class='text-center'><h2>Confirm RSVP</h2></div>
+	<div>
+		<h3 class='confirmlabel'><span class=label-color>First Name:</span></h3>
+		{{#if firstName}}
+				<input class='form-control' type='text' name='name' placeholder='first' value={{firstName}} style='margin-bottom: .5em' required></input>
+		{{else}}
+				<input class='form-control' type='text' name='name' placeholder='first' style='margin-bottom: .5em' required></input>
+		{{/if}}
+	</div>
+
+	
+	<div>
+		<h3 class='confirmlabel'><span class=label-color>Last Name:</span></h3>
+		{{#if lastName}}
+				<input class='form-control' type='text' name='lastName' value={{lastName}} style='margin-bottom: .5em' required></input>
+			{{!-- <h3>Thank you for RSVP'ing, {{guest}}</h1> --}}
+		{{else}}
+				<input class='form-control' type='text' name='lastName' placeholder='last name' style='margin-bottom: .5em' required></input>
+		{{/if}}
+	</div>
+
+	
+	<div>
+		<h3 class='confirmlabel'><span class=label-color>Coming?</span></h3>
+		{{#if attendance}}
+			<select class="form-control" name='attendance' required>
+			<option></option>
+			<option>Yes, I plan to attend.</option>
+			<option>Regrets</option>
+		</select>
+		{{else}}
+			<select class="form-control" name='attendance'>
+			<option></option>
+			<option>Yes, I plan to attend.</option>
+			<option>Regrets</option>
+		</select>
+		{{/if}}
+	</div>
+
+	<div>
+		<h3 class='confirmlabel'><span class=label-color>Number in your party:</span></h3>
+		{{#if quantity}}
+			<select class="form-control" name='quantity' required>
+			  <option></option>
+			  <option>0</option>
+			  <option>Just me!</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>6</option>
+			  <option>7</option>
+			  <option>Seriously? More than 7?</option>
+			</select>
+
+		{{else}}
+			<select class="form-control" name='quantity' required>
+			  <option></option>
+			  <option>0</option>
+			  <option>Just me!</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>6</option>
+			  <option>7</option>
+			  <option>Seriously? More than 7?</option>
+			</select>
+		{{/if}}
+	</div>
+
+	<div>
+		<h3 class='confirmlabel'><span class=label-color>How you know them:</span></h3>
+		{{#if howYouKnow}}
+			<textarea class="form-control" id='formStory' name='howYouKnow' rows="3" required>{{howYouKnow}} </textarea>
+		{{else}}
+			<textarea class="form-control" id='formStory' name='howYouKnow' rows="3" required></textarea>
+		{{/if}}
+	</div>
+	
+	<div>
+		<h3 class='confirmlabel'><span class=label-color>How long you've known them:</span></h3>
+		{{#if howLong}}
+			<textarea class='form-control' type='text' name='howLong' style='margin-bottom: .5em' required>{{howLong}}</textarea>
+
+		{{else}}
+			<textarea class='form-control' type='text' name='howLong' style='margin-bottom: .5em' required></textarea>
+		{{/if}}
+	</div>
+
+	<div>
+		<h3 class='confirmlabel'><span class=label-color>What you think they'll be doing in ten years:</span></h3>
+	{{#if prediction}}
+		<textarea class="form-control" id='formStory' name='prediction' rows="3" required>{{prediction}}</textarea>
+	{{else}}
+		<textarea class="form-control" id='formStory' name='prediction' rows="3" required></textarea>
+	{{/if}}
+	</div>
+<div class='text-center' style='margin-bottom: 1em'>
+	<button type='submit' class='btn btn-primary sm' style='margin-top: 1em'><p>Confirm!</button>
+</div>
+</form>
+</div>

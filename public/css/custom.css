@@ -3,6 +3,37 @@
 
 /* secondary color: #FF7544 */
 
+
+.story-pic {
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+.confirm-rsvp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.label-color {
+    background-color: #264E78;
+}
+
+.confirm-rsvp .confirmlabel {
+    margin-bottom: -.35em;
+    margin-left: 1em;
+    font-weight: 300;
+    font-size: 2em;
+    /*opacity: 1;*/
+}
+
+.confirm-rsvp input, .confirm-rsvp select, .confirm-rsvp textarea {
+    background-color: transparent;
+    color: white;
+    border-color: #FF7544;
+}
+
 html,
 body {
     font-family: 'Lato', sans-serif;
@@ -26,15 +57,6 @@ h2, h3, p {
     font-weight: 300;
 }
 
-
-.wrap {
-
-}
-
-/*form {
-    font-size: 2em;
-}*/
-
 a {
     text-decoration: none;
     color: inherit;
@@ -44,12 +66,6 @@ a {
 .section a:hover {
     color: #FF7544;
     text-decoration: none;
-}
-
-
-#formStory {
-    /*height: 200px;
-    width: 85%;*/
 }
 
 .btn {
@@ -380,11 +396,6 @@ and (max-device-width : 568px) {
 
 }
 
-.story {
-    border: #FF7544 solid 2px;
-    margin: 1em 0 1em 0;
-}
-
 #story-background {
     background-image: url("http://www.clker.com/cliparts/H/h/t/w/E/1/ampersand-111.svg");
     background-repeat: no-repeat;
@@ -394,3 +405,14 @@ and (max-device-width : 568px) {
     vertical-align: center;
     max-height: 450px;*/
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    #story-background {
+        display: none;
+    }
+}
+
+
+

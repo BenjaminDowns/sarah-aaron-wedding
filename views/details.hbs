@@ -1,6 +1,16 @@
 <div class='section col-md-12 text-center visual-space'>
 
 <h1>{{title}}</h1>
+
+{{#if guest}}
+	<h3 class="animated fadeIn">Thanks for registering, {{guest}}.<br/><br/> You can find details about the day, including links to Aaron and Sarah's registry, below.</h3>
+	{{!-- <h3>Thank you for RSVP'ing, {{guest}}</h1> --}}
+{{else}}
+	<br/><br/>
+	<h4>Do you still need to RSVP?</h4>
+	<p><a href='/RSVP'><button class="btn btn-alternate">RSVP now</button></a></p>
+{{/if}}
+
 </div>
 	<img class='img img-responsive col-xs-12' src='/img/tableRockLodge.png' id='lodgePic'></img>
 	
@@ -79,9 +89,9 @@ src="https://www.google.com/maps/embed/v1/place?q=Table+Rock+Lodge,+Pickens+Coun
 	<div class='col-sm-6'>
 
 		<div class='col-sm-12 visual-space section'>
-			<a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542369664&pwsurl="><img class='img img-responsive col-xs-6' src='/img/BBBeyond.png' style='opacity: .7;'><img/><a/>
+			<a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542369664&pwsurl="><img class='img img-responsive col-xs-6' src='/img/BBBeyond.png' style='opacity: .7;'></img></a>
 
-			
+			<a href="http://www.target.com/gift-registry/giftgiver?registryId=E7CFdislHJzS3bSneZW3PA&registryType=WEDDING"><img class='img img-reponsive col-xs-6' src='img/target.png' style='max-width: 40%'></img></a>
 			{{!-- <a href= --}}
 				
 		</div>
