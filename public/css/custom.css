@@ -1,12 +1,29 @@
 /* main color: #264E78 */
 
 
-/* secondary color: #FF7544 */
+/* secondary color: #e55955 */
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e55955;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+hr.mid {
+    margin: 1em 5em 1em 5em;
+}
+
+.color-text {
+    color: #e55955;
+}
 
 .story-pic {
     border-radius: 50%;
     margin-top: 2em;
+    max-height: 200px;
 }
 
 .confirm-rsvp {
@@ -31,7 +48,7 @@
 .confirm-rsvp input, .confirm-rsvp select, .confirm-rsvp textarea {
     background-color: transparent;
     color: white;
-    border-color: #FF7544;
+    border-color: #e55955;
 }
 
 html,
@@ -53,7 +70,7 @@ h1 {
     font-family: "Amatic SC";
 }
 
-h2, h3, p {
+h2, h3 {
     font-weight: 300;
 }
 
@@ -64,7 +81,7 @@ a {
 }
 
 .section a:hover {
-    color: #FF7544;
+    color: #e55955;
     text-decoration: none;
 }
 
@@ -99,7 +116,7 @@ a {
 .link .bar {
     width: 1%;
     display: inline-block;
-    border-bottom: 5px solid #FF7544;
+    border-bottom: 5px solid #e55955;
     position: absolute;
     bottom: 0;
     left: 0%;
@@ -115,7 +132,7 @@ a {
 .link .leftbar {
     width: 1%;
     display: inline-block;
-    border-bottom: 5px solid #FF7544;
+    border-bottom: 5px solid #e55955;
     position: absolute;
     bottom: 0;
     right: 0%;
@@ -159,7 +176,8 @@ footer {
 .section {
     padding: 50px 10px 50px 10px;
     margin: auto auto 10px auto;
-    /*min-height: 400px;*/
+    min-height: 410px;
+    font-weight: 100;
 }
 
 #RSVPbtn {
@@ -267,20 +285,20 @@ body,
 }
 
 .btn.active, .btn:active {
-    background-color: #FF7544 !important;
+    background-color: #e55955 !important;
     opacity: .7 !important;
 
 }
 
 .btn.hover, .btn:hover {
-    background-color: #FF7544 !important;
+    background-color: #e55955 !important;
     opacity: .9 !important;
     color: white;
 }
 
 
 .btn.focus, .btn:focus {
-    background-color: #FF7544 !important;
+    background-color: #e55955 !important;
     opacity: .7 !important;
 }
 
@@ -298,7 +316,7 @@ body,
 }
 
 .form-control:focus {
-    border-color: #FF7544;
+    border-color: #e55955;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(223, 118, 78, 1);
 }*/
 
@@ -308,7 +326,7 @@ body,
     display: flex;
     align-items: center;
     justify-content: center;
-    border: #FF7544 solid 2px;
+    border: #e55955 solid 2px;
     width: 60%;
     min-height: 350px;
     /*centers the div*/
@@ -375,7 +393,7 @@ li {
     font-family: 'FontAwesome';
     content: "\f061";
     margin:0px 0px 0 0px;
-    color: #FF7544;
+    color: #e55955;
 }
 
 ul {
