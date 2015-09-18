@@ -1,4 +1,6 @@
-Sarah and Aaron's Website
+## Sarah and Aaron's wedding website
 
-Built with node.js and the usual suspects (Express.js, Bootstrap...)
+### www.sarahaaronlove.com
+
+Built with node.js and the usual suspects (Express.js, Handlebars, Bootstrap...). Features a dynamic RSVP form that uses nodemailer to send confirmations.
 
