@@ -3,6 +3,17 @@
 
 /* secondary color: #e55955 */
 
+.registry-pic {
+    opacity: .7;
+    transition: all .25s ease-in-out;
+}
+
+.registry-pic:hover {
+    opacity: .9;
+    filter: alpha(opacity=90%);
+}
+
+
 hr {
     display: block;
     height: 1px;
