@@ -6,6 +6,7 @@
 .registry-pic {
     opacity: .7;
     transition: all .25s ease-in-out;
+    -webkit-backface-visibility: hidden;
 }
 
 .registry-pic:hover {

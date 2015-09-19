@@ -1,6 +1,5 @@
 TODO:
 
-1) Change font!!!!
 2) Change map to "directions style" (through traveler's rest)
 
 
