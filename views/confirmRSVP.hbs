@@ -1,8 +1,7 @@
-
 <div class='col-sm-12 confirm-rsvp visual-space' class='animated FadeIn'>
 
 
-<form action="/confirmRSVP" method="post" class='animated FadeIn'>
+<form action="/confirmRSVP" method="post" class='animated FadeIn' id='rsvpForm'>
 <div class='text-center'><h2>Confirm RSVP</h2></div>
 	<div>
 		<h3 class='confirmlabel'><span class=label-color>First Name:</span></h3>
@@ -34,7 +33,7 @@
 			<option>Regrets</option>
 		</select>
 		{{else}}
-			<select class="form-control" name='attendance'>
+			<select class="form-control" name='attendance' required>
 			<option></option>
 			<option>Yes, I plan to attend.</option>
 			<option>Regrets</option>
