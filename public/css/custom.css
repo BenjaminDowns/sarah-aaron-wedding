@@ -71,6 +71,7 @@ body {
     background: url('/img/symphony.png');
     max-width: 100%;
     overflow-x: hidden;
+    animation-delay: .5s;
 }
 
 p {
@@ -99,10 +100,6 @@ a {
 
 .btn {
     font-size: 1em;
-}
-
-#background {
-    background: url('/img/symphony.png');
 }
 
 .header {
