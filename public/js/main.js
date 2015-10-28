@@ -2,6 +2,11 @@ $('input').on('keydown', function(event) { if (event.which == 13 || event.which 
 
 $('document').ready(function() {
 
+  //carousel //
+  if ($('.carousel').length > 0) {
+    $('.carousel').carousel({ interval: 4000 })
+  }
+
   $('#dropdownMenu1').click(function() {
     this.blur();
   });
@@ -39,15 +44,5 @@ $('document').ready(function() {
     $('#question5').css('display', 'none')
     $('#question6').css('display', 'block')
   });
-
-  // $('#question6btn').on('click', function() {
-  //   $('#question6').css('display', 'none')
-  //   $('#question7').css('display', 'block')
-  // });
-  
-  // $('#question7btn').on('click', function() {
-  //   $('#question7').css('display', 'none')
-  //   $('#question8').css('display', 'block')
-  // });
 
 })
